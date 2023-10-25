@@ -19,6 +19,6 @@ filter_list = my_fruit_list.loc[fruits_selected]
 # display only selected items
 streamlit.dataframe(filter_list)
 
-fruityvice_response = request.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
 
