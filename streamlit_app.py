@@ -43,9 +43,9 @@ streamlit.text("The fruit load list contains..")
 #snowflake to display data
 
 def load_fruit_table():
-   with my_cnx.cursor() as my_csr
+   with my_cnx.cursor() as my_csr:
       my_csr.execute("select * from fruit_load_list")
-   return my_csr.fetchall()
+      return my_csr.fetchall()
 
 if streamlit.button('Get fruit load list'):
    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
