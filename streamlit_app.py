@@ -22,7 +22,7 @@ streamlit.dataframe(filter_list)
 
 # display fruit advice section
 # first define a function
-def get_fruit_advice(input_text)
+def get_fruit_advice(input_text):
    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+input_text)
    fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
    return fruityvice_normalized
