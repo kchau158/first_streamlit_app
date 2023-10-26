@@ -35,9 +35,10 @@ my_csr = my_cnx.cursor()
 my_csr.execute("select * from fruit_load_list")
 my_data_row = my_csr.fetchall()
 streamlit.text("The fruit load list contains..")
-streamlit.text(my_data_row)
+streamlit.dataframe(my_data_row)
 
-user_selected_fruit = streamlit.multiselect("What would you like to add",['Apple'])
+user_selected_fruit = streamlit.text_input("What would you like to add",'Apple')
+streamlit.text("User enters "+user_selected_fruit)
 
 
 
