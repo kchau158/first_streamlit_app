@@ -33,7 +33,7 @@ streamlit.dataframe(fruityvice_normalized)
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_csr = my_cnx.cursor()
 my_csr.execute("select * from fruit_load_list")
-my_data_row = my_csr.fetchone()
+my_data_row = my_csr.fetchall()
 streamlit.text("The fruit load list contains..")
 streamlit.text(my_data_row)
 
