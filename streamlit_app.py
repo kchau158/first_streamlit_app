@@ -28,7 +28,13 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"watermel
 #streamlit.dataframe(fruityvice_normalized)
 
 #streamlit.text(fruityvice_response.json())
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-streamlit.dataframe(fruityvice_normalized)
+#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+#streamlit.dataframe(fruityvice_normalized)
 
+data = [
+    {"id": 1, "name": {"first": "Coleen", "last": "Volk"}},
+    {"name": {"given": "Mark", "family": "Regner"}},
+    {"id": 2, "name": "Faye Raker"},
+]
+stramlit.dataframe(pd.json_normalize(data))
 
