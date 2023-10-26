@@ -37,8 +37,10 @@ my_data_row = my_csr.fetchall()
 streamlit.text("The fruit load list contains..")
 streamlit.dataframe(my_data_row)
 
-user_selected_fruit = streamlit.text_input("What would you like to add?",'Apple')
-streamlit.text("User enters "+user_selected_fruit)
+adding_fruit = streamlit.text_input("What would you like to add?",'Apple')
+streamlit.text("Thanks for adding "+adding_fruit)
+
+my_csr.execute("insert into fruit_load_list values('from streamlit!')")
 
 
 
