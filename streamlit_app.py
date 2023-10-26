@@ -59,7 +59,7 @@ def insert_row_into_snowflake(new_fruit):
       return "Thanks for adding "+new_fruit
 
 adding_fruit = streamlit.text_input("What would you like to add?",'Apple')
-if streamlit.button("Add fruit to list ":
+if streamlit.button("Add fruit to list "):
    streamlit.text(insert_row_into_snowflake(adding_fruit))
 
 
