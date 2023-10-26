@@ -35,7 +35,7 @@ my_csr = my_cnx.cursor()
 my_csr.execute("select current_user(),current_account(),current_region()")
 my_data_row = my_csr.fetchone()
 streamlit.text("Hello Snowflake")
-streamlit.txt(my_data_row)
+streamlit.text(my_data_row)
 
 
 
