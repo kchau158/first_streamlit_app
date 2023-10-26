@@ -33,10 +33,10 @@ try:
   if not fruit_choice:
     streamlit.error("Please select a fruit choice to get information")
   else:
-    streamlit.dataframe(get_fruit_advice(fruit_choice)
+    streamlit.dataframe(get_fruit_advice(fruit_choice))
 
-#except URLError as e:
-#  streamlit.error()
+except URLError as e:
+  streamlit.error()
   
 streamlit.stop()
 
