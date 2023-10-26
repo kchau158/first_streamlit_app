@@ -37,6 +37,9 @@ my_data_row = my_csr.fetchall()
 streamlit.text("The fruit load list contains..")
 streamlit.text(my_data_row)
 
+user_selected_fruit = streamlit.multiselect("What would you like to add",['Apple'])
+
+
 
 
 
