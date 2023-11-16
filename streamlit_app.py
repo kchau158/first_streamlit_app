@@ -6,15 +6,16 @@ import urllib.error as URLError
 
 
 streamlit.title("Welcome to Tasty Bytes Catering")
-streamlit.text('🌮🌯 Tacos')
-streamlit.text('🥗🍅 Veggies')
-streamlit.text('🥪 Sandwiches')
-streamlit.text('🥯 Bagels')
-streamlit.text('🥓🍗 Barbeque')
-streamlit.text('🥝🍇 Fruits')
 
+streamlit.text('🥯 Bagels')
+
+streamlit.text('🥝🍇 Fruits')
+streamlit.text('🥗🍅 Veggies')
 
 streamlit.header('🍽️ Let''s build your order 🍽️')
+streamlit.text('🌮🌯 Tacos')
+streamlit.text('🥓🍗 Barbeque')
+streamlit.text('🥪 Sandwiches')
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
