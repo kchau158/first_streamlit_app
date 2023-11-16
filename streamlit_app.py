@@ -5,8 +5,8 @@ import snowflake.connector
 import urllib.error as URLError
 
 
-streamlit.title("My breakfast")
-streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
+streamlit.title("Welcome to Tasty Bytes Catering")
+streamlit.text('🌮 Tacos :smile:')
 streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔 Hard-Boiled Free-Range Egg')
 streamlit.text('🥑🍞 Avocado Toast')
